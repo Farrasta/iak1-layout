@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE0E0E6"
+    tools:context="com.example.farrastak.iak1.MainActivity">
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/bruce"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@+id/gambar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        style="@style/title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textshare">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textshare">
+        <TextView
+            android:id="@+id/textcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
